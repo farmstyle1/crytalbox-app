@@ -1,0 +1,220 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    tools:context="app.wind.crystalbox.Order.OrderBill">
+
+
+    <LinearLayout
+        android:id="@+id/BillLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <RelativeLayout
+            android:id="@+id/BillLayoutL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ECEFF1">
+            <LinearLayout
+                android:id="@+id/HeadlistBillItem"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ColName"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:background="#3498db"
+                    android:text="Name"/>
+
+                <TextView
+                    android:id="@+id/ColOption"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:background="#3498db"
+                    android:text="Option"/>
+
+                <TextView
+                    android:id="@+id/ColQty"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:background="#3498db"
+                    android:text="Qty"/>
+
+                <TextView
+                    android:id="@+id/ColPrice"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:background="#3498db"
+                    android:text="Price" />
+                <Button
+                    android:id="@+id/btnDel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#3498db"
+                    />
+            </LinearLayout>
+        <ListView
+            android:id="@+id/listBillItem"
+            android:layout_below="@+id/HeadlistBillItem"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></ListView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/BillLayoutR"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ECEFF1">
+
+            <Button
+
+                android:id="@+id/btnADD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#e74c3c"
+                android:gravity="center"
+                android:text="ADD Item"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:layout_margin="4dp"
+                android:layout_alignParentTop="true"
+               />
+            <RelativeLayout
+                android:id="@+id/totalLayout"
+                android:layout_above="@+id/payLayout"
+                android:layout_below="@+id/btnADD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="#ffffff"
+                android:layout_margin="4dp">
+                <LinearLayout
+                    android:id="@+id/billNoLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Bill No."
+                        android:gravity="center"
+                        android:layout_weight="2"
+                        android:background="#3498db"
+                        android:textSize="20sp"
+                        android:textColor="#ffffff"
+                        android:layout_margin="4dp"/>
+
+
+                    <TextView
+                        android:id="@+id/txtBillNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:layout_margin="4dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/tableLayout"
+                    android:layout_below="@+id/billNoLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Table"
+                        android:gravity="center"
+                        android:layout_weight="2"
+                        android:background="#f1c40f"
+                        android:textSize="20sp"
+                        android:textColor="#ffffff"
+                        android:layout_margin="4dp"/>
+
+
+                    <EditText
+                        android:id="@+id/etxtTable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:layout_margin="4dp"
+                        android:text="No Table"
+                        android:focusableInTouchMode="false"
+                        />
+
+                </LinearLayout>
+
+
+
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/payLayout"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+
+                    android:id="@+id/btnDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#f39c12"
+                    android:gravity="center"
+                    android:text="Done"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"/>
+
+
+                <Button
+                    android:id="@+id/btnPay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#2ecc71"
+                    android:gravity="center"
+                    android:text="PAY"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

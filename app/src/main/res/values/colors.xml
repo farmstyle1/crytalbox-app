@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#F49A80</color>
+    <color name="primary_dark">#F49A80</color>
+    <color name="text">#ffffff</color>
+    <color name="accent">#F49A80</color>
+    <color name="Hot">#e74c3c</color>
+    <color name="Ice">#3498db</color>
+    <color name="Frappe">#2ecc71</color>
+    <color name="Cake">#e67e22</color>
+    <color name="Food">#1abc9c</color>
+    <color name="Alcohol">#f1c40f</color>
+    <color name="Other">#9b59b6</color>
+
+    <color name="red">#D74B4C</color>
+    <color name="green">#2ecc71</color>
+    <color name="orange">#FCA44B</color>
+    <color name="yellow">#f1c40f</color>
+    <color name="pink">#F49A80</color>
+    <color name="blue">#3498db</color>
+    <color name="gray">#CECECE</color>
+    <color name="violet">#9b59b6</color>
+    <color name="white">#ffffff</color>
+
+
+
+
+</resources>

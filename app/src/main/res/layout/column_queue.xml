@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <TextView
+        android:id="@+id/queueItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:text="Item"
+
+        android:gravity="center"
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:id="@+id/queueOption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:text="Option"
+
+        android:layout_weight="1"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/queueQty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:text="Qty"
+
+        android:layout_weight="1"
+        android:gravity="center"
+        />
+
+
+    <TextView
+        android:id="@+id/queueTable"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:text="Table"
+
+        android:layout_weight="1"
+        android:gravity="center"
+        />
+
+
+
+    <Button
+        android:id="@+id/queueStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:text="Status"
+        android:layout_weight="1"
+        android:gravity="center"
+        />
+
+
+
+
+
+</LinearLayout>
